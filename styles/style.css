@@ -1,0 +1,185 @@
+@import 'https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600&family=Raleway:ital,wght@1,300&display=swap';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: inter;
+}
+
+body {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9019607843);
+}
+
+header .menu-bar {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-column: 1/2;
+}
+header .menu-bar .line1, header .menu-bar .line2, header .menu-bar .line3 {
+  width: 50%;
+  background-color: black;
+  border-radius: 5px;
+  border: thin solid;
+  transition: all 0.2s;
+}
+header .actived {
+  display: block;
+  position: relative;
+}
+header .actived .line1 {
+  display: none;
+}
+header .actived .line2 {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 40%;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+header .actived .line3 {
+  transform: rotate(135deg);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 40%;
+  transition-duration: 0.2s;
+  transition-property: all;
+}
+
+header {
+  background-color: rgb(145, 163, 176);
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+header h2 {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.divLogo img {
+  width: 100%;
+  border-bottom: 2rem solid rgb(145, 163, 176);
+  margin-bottom: 2rem;
+}
+
+aside {
+  float: left;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: -16rem;
+  transition: all 0.8s;
+  top: 3.6rem;
+}
+@media only screen and (min-width: 375px) {
+  aside {
+    left: -19.5rem;
+  }
+}
+@media only screen and (min-width: 425px) {
+  aside {
+    left: -21.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  aside {
+    left: -40rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  aside {
+    left: -20.5rem;
+    width: 20%;
+  }
+}
+aside a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10%;
+  margin-top: 0.8rem;
+}
+
+.showUp {
+  position: absolute;
+  left: 0;
+  top: 3.6rem;
+}
+
+#indexBody main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#indexBody main h2 {
+  color: #004687;
+}
+#indexBody main section {
+  color: white;
+  margin-bottom: 4rem;
+  width: 80%;
+}
+#indexBody main img {
+  margin-bottom: 3rem;
+  width: 80%;
+}
+#indexBody main #tittle {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+#indexBody main #diff {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#equipeBody header {
+  margin-bottom: 2rem;
+}
+#equipeBody main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#equipeBody main h2 {
+  color: #004687;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#equipeBody main section {
+  width: 80%;
+  color: white;
+  text-align: start;
+  margin-bottom: 5rem;
+}
+#equipeBody main section .card {
+  display: grid;
+  margin-bottom: 8rem;
+  grid-template-rows: auto 1fr;
+  gap: 1.5rem;
+}
+#equipeBody main section .card img {
+  width: 100%;
+  grid-row: 1/2;
+  justify-self: center;
+}
+@media only screen and (min-width: 1024px) {
+  #equipeBody main section .card img {
+    width: 40%;
+  }
+}
+#equipeBody main section .card p {
+  grid-row: 2/3;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
