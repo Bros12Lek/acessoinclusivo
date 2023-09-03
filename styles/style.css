@@ -134,6 +134,15 @@ aside a {
 #indexBody .equipeHref:hover {
   color: #7CB9E8;
 }
+#indexBody .divLogo {
+  background-image: url("../../imgs/logo.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 38rem;
+  background-color: white;
+  margin-bottom: 2%;
+  border-bottom: 5rem solid rgb(145, 163, 176);
+}
 #indexBody main {
   display: flex;
   flex-direction: column;
@@ -201,6 +210,11 @@ aside a {
 }
 #equipeBody aside {
   height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  #equipeBody aside {
+    height: 94%;
+  }
 }
 #equipeBody .indexHref {
   transition-property: all;
